@@ -31,7 +31,6 @@
     background: var(--turquoise-30);
     font-family: 'Kodchasan';
 }
-
 .container h1{
     font-size: 30px;
     position: relative;
@@ -76,6 +75,12 @@
     font-size: 17px;
     position: relative;
 }
+.p-ar{
+    background: var(--pink-20);
+}
+.p-art{
+    background: var(--pink);
+}
 
 .calificacion{
     display: flex;
@@ -94,4 +99,13 @@
     height: 48.15px;
     left: 55px;
     margin-top: 40px;
+}
+
+.redes-sociales{
+    display: flex;
+    position: relative;
+    top:10px;
+    left: 20px;
+    width: 250px;
+    justify-content: space-between;
 }
