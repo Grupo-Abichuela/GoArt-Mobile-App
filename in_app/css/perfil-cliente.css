@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 390px;
+    height: 844px;
+    margin: 0%;
+    background: var(--pink-10);
+}
+.circle{
+    width: 209px;
+    height: 209px;
+    margin: auto;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    position: relative;
+    top: 114px;
+}
+.profile-pic{
+    width: 209px;
+    height: 209px;
+    border-radius: 50%;
+}
+.container{
+    width: 390px;
+    height: 499px;
+    top: 267px;
+    border-radius: 40px;
+    background: var(--turquoise-30);
+    font-family: 'Kodchasan';
+}
+
+.container h1{
+    font-size: 30px;
+    position: relative;
+    top: 106px;
+    left: 20px;
+}
+.container button{
+    background: var(--blue);
+    color: var(--white);
+    font-size: 17px;
+    position: relative;
+    justify-content: center;
+}
+
+.btn-edit{
+    width: 103px;
+    height: 48.15px;
+    left: 270px;
+    top: 43px;
+    border-radius: 22px;
+}
+
+.container p{
+    position: relative;
+    left: 28px;
+    top: 20px;
+}
+
+.description{
+    background: var(--turquoise);
+    display: flex;
+    margin: 20px;
+    margin-top: 31px;
+    margin-bottom: 31px;
+}
+
+.description p{
+    justify-content: center;
+    left: 10px;
+    top:0;
+    color: var(--white);
+    font-size: 17px;
+    position: relative;
+}
+
+.calificacion{
+    display: flex;
+    position: relative;
+    left: 20px;
+    width: 160px;
+    justify-content: space-between;
+}
+
+.calificacion img{
+    position: relative;
+}
+
+.btn-resenhas{
+    width: 279px;
+    height: 48.15px;
+    left: 55px;
+    margin-top: 40px;
+}
