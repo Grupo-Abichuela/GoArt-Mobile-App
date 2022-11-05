@@ -37,10 +37,25 @@
                     <a href="https://www.linkedin.com/" target="_blank"><img src="assets/img/_Linkedin.png"></a>
                     <a href="https://www.pinterest.com/" target="_blank"><img src="assets/img/_Pinterest.png"></a>
                 </div>
-                <button class="btn-resenhas" href="">Terminos y condiciones</button>
+                <button class="btn-resenhas" onclick="openPopup()">Términos y condiciones</button>
+                
             </div>
+        </div>
+        <div class="popup" id="popup">
+            <h2>Términos y Condiciones</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <button class="btn-pop" onclick="closePopup()">OK</button>
         </div>
     </div>
     <app-footer-nav></app-footer-nav>
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
 </body>
 </html>
