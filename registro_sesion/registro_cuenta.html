@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="assets/css/inicio_sesion.css">
+    <link rel="stylesheet" href="css/registro_cuenta.css">
     <link href="http://fonts.cdnfonts.com/css/kodchasan" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Hind Madurai' rel='stylesheet'>
     <link href="http://fonts.cdnfonts.com/css/inder" rel="stylesheet">
@@ -14,22 +14,25 @@
 <body>
     <div class="device">
         <header>
-            <p>GoArt</p>
+            <h1>GoArt</h1>
+            <p>Cliente</p>
         </header>
-        <div class="content">
-            <div class="inicio-sesion-form">
-                <p id="inicio-sesion-title">Regístrate</p>
-                <input class="inicio-sesion-input" type="text" name="key-words" placeholder="Correo Electrónico">
-                <input class="inicio-sesion-input" type="text" name="key-words" placeholder="Nombre de usuario">
-                <input class="inicio-sesion-input" type="text" name="key-words" placeholder="Contraseña">
-                <div class="iniciar-sesion">
-                    <button><p>Crear cuenta</p></button>
-                    <p>¿Ya tienes una cuenta? <a href="inicio_sesion.html">Inicia sesión</a></p>
+        <div id="content">
+            <div id="inicio-sesion">
+                <form class="inicio-sesion-form">
+                    <p id="inicio-sesion-title">Regístrate</p>
+                    <input class="inicio-sesion-input" type="text" name="key-words" placeholder="Correo Electrónico">
+                    <input class="inicio-sesion-input" type="text" name="key-words" placeholder="Nombre de usuario">
+                    <input class="inicio-sesion-input" type="text" name="key-words" placeholder="Contraseña">
+                    <div class="iniciar-sesion">
+                        <button><p>Crear cuenta</p></button>
+                        <p>¿Ya tienes una cuenta? <a href="../inicio_sesion/inicio_sesion.html">Inicia sesión</a></p>
+                    </div>
+                </form>
+                <div class="continuar-con">
+                    <button><p>Continuar con Google</p></button>
+                    <button><p>Continuar con Facebook</p></button>
                 </div>
-            </div>
-            <div class="continuar-con">
-                <button><p>Continuar con Google</p></button>
-                <button><p>Continuar con Facebook</p></button>
             </div>
         </div>
         <app-footer-nav></app-footer-nav>
