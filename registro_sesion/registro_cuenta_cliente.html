@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="css/inicio_sesion.css">
+    <link rel="stylesheet" href="assets/css/registro_cuenta_cliente.css">
     <link href="http://fonts.cdnfonts.com/css/kodchasan" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Hind Madurai' rel='stylesheet'>
-    <link href="http://fonts.cdnfonts.com/css/inder" rel="stylesheet">
+    <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
 </head>
 <body>
     <div class="device">
@@ -19,17 +19,14 @@
         </header>
         <div id="content">
             <div id="inicio-sesion">
-                <form class="inicio-sesion-form">
-                    <p id="inicio-sesion-title">Inicio Sesión</p>
-                    <label for="correo">
-                        <input class="inicio-sesion-input" id="correo" type="text" name="correo" placeholder="Correo Electrónico">
-                    </label>
-                    <label for="contrasenha">
-                        <input class="inicio-sesion-input" id="contrasenha" type="text" name="contrasenha" placeholder="Contraseña">
-                    </label>
+                <form id="inicio-sesion-form" method="post">
+                    <p id="inicio-sesion-title">Regístrate</p>
+                    <input class="inicio-sesion-input" type="text" name="correo" placeholder="Correo Electrónico" required>
+                    <input class="inicio-sesion-input" type="text" name="nombre" placeholder="Nombre de usuario" required>
+                    <input class="inicio-sesion-input" type="text" name="contrasenha" placeholder="Contraseña" required>
                     <div class="iniciar-sesion">
-                        <button><p>Iniciar sesión</p></button>
-                        <p>¿Aún no tienes cuenta? <a href="../registro_sesion/registro_cuenta.html">Registrate</a></p>
+                        <button><p>Crear cuenta</p></button>
+                        <p>¿Ya tienes una cuenta? <a href="../inicio_sesion/inicio_sesion_cliente.html">Inicia sesión</a></p>
                     </div>
                 </form>
                 <div class="continuar-con">
@@ -38,8 +35,7 @@
                 </div>
             </div>
         </div>
-        <app-footer-nav></app-footer-nav>
-    </div> 
-    <script src="../../components.js"></script>
+    </div>
+    <script src="assets/js/registro_cuenta.js"></script> 
 </body>
 </html>

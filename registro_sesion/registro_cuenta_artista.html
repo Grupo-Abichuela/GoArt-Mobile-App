@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="css/registro_cuenta.css">
+    <link rel="stylesheet" href="assets/css/registro_cuenta_artista.css">
     <link href="http://fonts.cdnfonts.com/css/kodchasan" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Hind Madurai' rel='stylesheet'>
-    <link href="http://fonts.cdnfonts.com/css/inder" rel="stylesheet">
+    <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
 </head>
 <body>
     <div class="device">
         <header>
             <h1>GoArt</h1>
-            <p>Cliente</p>
+            <p>Artista</p>
         </header>
         <div id="content">
             <div id="inicio-sesion">
-                <form class="inicio-sesion-form">
+                <form id="inicio-sesion-form" method="post">
                     <p id="inicio-sesion-title">Regístrate</p>
-                    <input class="inicio-sesion-input" type="text" name="key-words" placeholder="Correo Electrónico">
-                    <input class="inicio-sesion-input" type="text" name="key-words" placeholder="Nombre de usuario">
-                    <input class="inicio-sesion-input" type="text" name="key-words" placeholder="Contraseña">
+                    <input class="inicio-sesion-input" type="text" name="correo" placeholder="Correo Electrónico" required>
+                    <input class="inicio-sesion-input" type="text" name="nombre" placeholder="Nombre de usuario" required>
+                    <input class="inicio-sesion-input" type="text" name="contrasenha" placeholder="Contraseña" required>
                     <div class="iniciar-sesion">
                         <button><p>Crear cuenta</p></button>
-                        <p>¿Ya tienes una cuenta? <a href="../inicio_sesion/inicio_sesion.html">Inicia sesión</a></p>
+                        <p>¿Ya tienes una cuenta? <a href="../inicio_sesion/inicio_sesion_artista.html">Inicia sesión</a></p>
                     </div>
                 </form>
                 <div class="continuar-con">
@@ -35,9 +35,8 @@
                 </div>
             </div>
         </div>
-        <app-footer-nav></app-footer-nav>
     </div> 
-    <!--<script src="../components.js"></script>-->
+    <script src="assets/js/registro_cuenta.js"></script> 
 
 </body>
 </html>

@@ -5,51 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../css/main.css">
-    <link rel="stylesheet" href="../css/inicio.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="assets/css/inicio.css">
     <link href="http://fonts.cdnfonts.com/css/kodchasan" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Hind Madurai' rel='stylesheet'>
     <link href="http://fonts.cdnfonts.com/css/inder" rel="stylesheet">
 </head>
 <body>
-    <script src="../../components/components.js"></script>
-    <script src="../../components/card/card.js"></script>
-    <div class="device">
-        <header>
-            <nav>
-                <button class="volver">
-                    <img src="../assets/img/volver_arrow.png" alt="volver">
-                    <p>Volver</p>
-                </button>
-            </nav>
-        </header>
-        <div class="content">
 
+    <div class="device">
+        <header><nav><volver-button></volver-button></nav></header>
+        <div class="content">
             <div class="container-slider">
                 <div class="slider">
-                    <div class="slider_img">
+                    <div class="slider-section">
                         <div>
                             <img src="../assets/img/img1.jpg" alt="1">
                         </div>
                     </div>
-                    <div class="slider_img">
+                    <div class="slider-section">
                         <div>
-                            <img src="../assets/img/img1.jpg" alt="1">
+                            <img src="../assets/img/img2.webp" alt="1">
+                        </div>
+                    </div>
+                    <div class="slider-section">
+                        <div>
+                            <img src="../assets/img/img3.webp" alt="1">
                         </div>
                     </div>
                 </div>
+                <div class="btn" id="btn-left"><img  src="../assets/img/previous.png" alt="prev"></div>
+                <div class="btn" id="btn-right"><img  src="../assets/img/next.png" alt="next"></div>
+                
             </div>
             <div class="cards-column">
-                <card-profile card_img="../assets/img/img1.jpg" card_title="SOY UN TITULO" card_ref="#" prof_img="../assets/img/img1.jpg" prof_txt="by TEXTO" prof_ref="#"></card-profile>
-                <card-profile card_img="../assets/img/img1.jpg" card_title="SOY UN TITULO" card_ref="#" prof_img="../assets/img/img1.jpg" prof_txt="by TEXTO" prof_ref="#"></card-profile>
-                <card-profile card_img="../assets/img/img1.jpg" card_title="SOY UN TITULO" card_ref="#" prof_img="../assets/img/img1.jpg" prof_txt="by TEXTO" prof_ref="#"></card-profile>
-                <card-profile card_img="../assets/img/img1.jpg" card_title="SOY UN TITULO" card_ref="#" prof_img="../assets/img/img1.jpg" prof_txt="by TEXTO" prof_ref="#"></card-profile>
-                <card-profile card_img="../assets/img/img1.jpg" card_title="SOY UN TITULO" card_ref="#" prof_img="../assets/img/img1.jpg" prof_txt="by TEXTO" prof_ref="#"></card-profile>
-                <card-profile card_img="../assets/img/img1.jpg" card_title="SOY UN TITULO" card_ref="#" prof_img="../assets/img/img1.jpg" prof_txt="by TEXTO" prof_ref="#"></card-profile>
-                <card-profile card_img="../assets/img/img1.jpg" card_title="SOY UN TITULO" card_ref="#" prof_img="../assets/img/img1.jpg" prof_txt="by TEXTO" prof_ref="#"></card-profile>
+                <card-profile value="5.0" card_img="../assets/img/img1.jpg" card_title="Ayla" card_ref="#" prof_img="../assets/img/prof1.jpg" prof_txt="por Chubymi" prof_ref="#"></card-profile>
+                <card-profile value="4.8" card_img="../assets/img/img2.webp" card_title="Skeleton Warrior" card_ref="#" prof_img="../assets/img/prof2.webp" prof_txt="por Rhydden" prof_ref="#"></card-profile>
+                <card-profile value="4.8" card_img="../assets/img/img3.webp" card_title="Eclipse Samurai" card_ref="#" prof_img="../assets/img/prof3.jpg" prof_txt="por Lineos_Art" prof_ref="#"></card-profile>
+                <card-profile value="4.5" card_img="../assets/img/img4.webp" card_title="Ayla" card_ref="#" prof_img="../assets/img/prof4.jpg" prof_txt="por Stormrider_art" prof_ref="#"></card-profile>
+                <card-profile value="4.2" card_img="../assets/img/img5.webp" card_title="Callous King" card_ref="#" prof_img="../assets/img/prof5.webp" prof_txt="por Silicon" prof_ref="#"></card-profile>
+                <card-profile value="4.0" card_img="../assets/img/img6.webp" card_title="Goblin" card_ref="#" prof_img="../assets/img/prof6.webp" prof_txt="por yodeller" prof_ref="#"></card-profile>
             </div>
         </div>
-
         <app-footer-nav></app-footer-nav>
 
         <!--<div id="slider" class="bk">
@@ -249,5 +246,9 @@
             </div>
         </div>--->
     </div> 
+    <script src="../components/footer_nav.js"></script>
+    <script src="../components/card.js"></script>
+    <script src="../components/volver_button.js"></script>
+    <script src="../components/slider.js"></script>
 </body>
 </html>
