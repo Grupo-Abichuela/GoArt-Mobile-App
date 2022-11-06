@@ -7,4 +7,4 @@ class Volver extends HTMLElement {
         </button>`
     }
 }
-customElements.define('volver-button', Volver)
+customElements.define('volver-button', Volver);
