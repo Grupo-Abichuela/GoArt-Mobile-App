@@ -10,12 +10,11 @@
     <link href="http://fonts.cdnfonts.com/css/kodchasan" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Hind Madurai' rel='stylesheet'>
     <link href="http://fonts.cdnfonts.com/css/inder" rel="stylesheet">
-</head>
-<body>
     <script src="../../components/card.js"></script>
     <script src="../components/footer_nav.js"></script>
-    <script src="../components/filter_nav.js"></script>
+</head>
 
+<body>
     <div class="device">
         <header class="volver">
             <button><a href= "../inicio/inicio.html"
@@ -26,11 +25,12 @@
             <div class="inicio-busqueda-form">
                 <form>
                     <input class="inicio-busqueda-input" type="text" name="key-words" placeholder="Buscar">
-                    <button type="submit" onclick="filterPopup()">Search</button>
+                    <button type="button" onclick="openPopup()"></button>
                 </form>
             </div>
-            <!-- <div class="app-filter-nav">
+            <div class="popup" id="popup">
                 <p class="filter-text-main">Filtros</p>
+                <button type="button" onclick="closePopup()"></button>
                 <div class="filter-row">
                     <div class="filter-column"><img src="../assets/svg/checkmark.svg"><p>Óleo</p></div>
                     <div class="filter-column"><img src="../assets/svg/checkmark.svg"><p>Pixel Art</p></div>
@@ -39,13 +39,20 @@
                     <div class="filter-column"><img src="../assets/svg/checkmark.svg"><p>Tradicional</p></div>
                     <div class="filter-column"><img src="../assets/svg/checkmark.svg"><p>Photo</p></div>
                 </div>
-            </div> -->
+            </div>
         </div>
         <img src="../assets/teclas.jpg">
-
         <app-footer-nav></app-footer-nav>
-
     </div> 
 
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup() {
+            popup.classList.add("open-popup"); 
+        }
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+    </script>
 </body>
 </html>

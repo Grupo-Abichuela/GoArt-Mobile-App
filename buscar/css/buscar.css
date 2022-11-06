@@ -12,13 +12,6 @@ header {
     align-items: center;
 }
 
-header p {
-    color: var(--white);
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
-    font-size: 44px;
-}
-
 .volver {
     background-color: var(--white);
     height: 24px;
@@ -95,13 +88,16 @@ header p {
     font-size: 20px;
     color: #B0A9A9;
     box-sizing: border-box;
-    width: 85%;
+    width: 100%;
     padding: 10px 35px;
     margin: 0;
     border-width: 0;
 }
 
-.inicio-busqueda-form button[type=submit] {
+.inicio-busqueda-form button[type=button] {
+    position: absolute;
+    left: 320px;
+    top: 128px;
     text-indent: -999px;
     overflow: hidden;
     width: 10%;
@@ -155,10 +151,12 @@ header p {
     font-size: 20px;   
 }
 
-.app-filter-nav {
+.popup {
+    visibility: hidden;
+    transition: transform 1s, top 1s;
     position: absolute;
     left: 5px;
-    top: 250px;
+    top: -400px;
     width: 370px;
     border-radius: 19px;
     background-color: var(--white);
@@ -169,8 +167,24 @@ header p {
     padding-right: 10px;
 }
 
+.open-popup {
+    visibility: visible;
+    top: 250px;
+    transition: transform 1s, top 1s;
+}
+
+.open-popup button[type=button] {
+    position: absolute;
+    left: 300px;
+    top: 30px;
+    border: transparent;
+    background:  url("../../assets/svg/close_button.svg") no-repeat center;
+    width: 40px;
+    height: 40px;
+}
+
 .filter-text-main {
-    padding-left: 60px;
+    padding-left: 40px;
     font-size: 30px;
     font-weight: 700;
     color: #000000;
