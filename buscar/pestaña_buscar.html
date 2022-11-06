@@ -14,6 +14,8 @@
 <body>
     <script src="../../components/card.js"></script>
     <script src="../components/footer_nav.js"></script>
+    <script src="../components/filter_nav.js"></script>
+
     <div class="device">
         <header class="volver">
             <button><a href= "../inicio/inicio.html"
@@ -22,13 +24,22 @@
 
         <div class="content">
             <div class="inicio-busqueda-form">
-                <p id="inicio-busqueda-title">Inicio Sesión</p>
-                <input class="inicio-busqueda-input" type="text" name="key-words" placeholder="Buscar">
-                <div class="busqueda">
-                    <button><p>Iniciar sesión</p></button>
-                    <p>¿Aún no tienes cuenta? <a href="registro_cuenta.html">Registrate</a></p>
-                </div>
+                <form>
+                    <input class="inicio-busqueda-input" type="text" name="key-words" placeholder="Buscar">
+                    <button type="submit" onclick="filterPopup()">Search</button>
+                </form>
             </div>
+            <!-- <div class="app-filter-nav">
+                <p class="filter-text-main">Filtros</p>
+                <div class="filter-row">
+                    <div class="filter-column"><img src="../assets/svg/checkmark.svg"><p>Óleo</p></div>
+                    <div class="filter-column"><img src="../assets/svg/checkmark.svg"><p>Pixel Art</p></div>
+                    <div class="filter-column"><img src="../assets/svg/checkmark.svg"><p>3D Art</p></div>
+                    <div class="filter-column"><img src="../assets/svg/checkmark.svg"><p>Urban</p></div>
+                    <div class="filter-column"><img src="../assets/svg/checkmark.svg"><p>Tradicional</p></div>
+                    <div class="filter-column"><img src="../assets/svg/checkmark.svg"><p>Photo</p></div>
+                </div>
+            </div> -->
         </div>
         <img src="../assets/teclas.jpg">
 
