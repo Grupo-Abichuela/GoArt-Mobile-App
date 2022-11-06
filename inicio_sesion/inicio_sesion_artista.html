@@ -39,8 +39,8 @@
         <div id="content">
             <div id="inicio-sesion">
                 <form id="inicio-sesion-form" method="post">
-                    <p id="inicio-sesion-title">Inicio Sesión</p>
-                    <input class="inicio-sesion-input" id="correo" type="text" name="correo" placeholder="Correo Electrónico" required>
+                    <p id="inicio-sesion-title">Inicia Sesión</p>
+                    <input class="inicio-sesion-input" id="correo" type="text" name="correo" placeholder="Correo Electrónico" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                     <input class="inicio-sesion-input" id="contrasenha" type="password" name="contrasenha" placeholder="Contraseña" required>
                     <div class="iniciar-sesion">
                         <button type="submit"><p>Iniciar sesión</p></button>
@@ -49,7 +49,7 @@
                 </form>
                 <div class="continuar-con">
                     <button id="continuar-google"><p>Continuar con Google</p></button>
-                    <button id="continuar-facebook"><p>Continuar con Facebook</p></button>
+                    <button id="continuar-twitter"><p>Continuar con Twitter</p></button>
                 </div>
             </div>
         </div>

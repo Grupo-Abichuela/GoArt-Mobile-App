@@ -1,6 +1,6 @@
 var sign_in_form = document.getElementById("inicio-sesion-form");
 var continuar_google = document.getElementById("continuar-google");
-var continuar_facebook = document.getElementById("continuar-facebook");
+var continuar_twitter = document.getElementById("continuar-twitter");
 var notifications = document.querySelectorAll(".alert_item");
 var close_btns = document.querySelectorAll(".close");
 
@@ -19,8 +19,8 @@ function verifyClientSignIn(event) {
 function signInGoogle(event) {
     window.location.href="https://accounts.google.com/login?hl=es";
 }
-function signInFacebook(event) {
-    window.location.href="https://es-la.facebook.com/login/device-based/regular/login/";
+function signInTwitter(event) {
+    window.location.href="https://twitter.com/login";
 }
 
 function verifySignIn(event) { 
@@ -48,4 +48,4 @@ close_btns.forEach(function(close, close_index){
 
 sign_in_form.addEventListener('submit', verifySignIn);
 continuar_google.addEventListener('click', signInGoogle);
-continuar_facebook.addEventListener('click', signInFacebook);
+continuar_twitter.addEventListener('click', signInTwitter);

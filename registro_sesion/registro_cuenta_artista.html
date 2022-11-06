@@ -20,9 +20,9 @@
             </div>
             <div class="data">
                 <p class="title"><span>Error:</span>
-                    Datos erroneos
+                    Correo previamente registrado
                 </p>
-                <p class="sub">Ingreso un correo o contraseña incorrecto.</p>
+                <p class="sub">Ingreso un correo que ya se encuentra vinculado a una cuenta de artista.</p>
             </div>
             <div class="close">
                 <i class="fas fa-times"></i>
@@ -54,9 +54,9 @@
             <div id="inicio-sesion">
                 <form id="inicio-sesion-form" method="post">
                     <p id="inicio-sesion-title">Regístrate</p>
-                    <input class="inicio-sesion-input" id="correo" type="text" name="correo" placeholder="Correo Electrónico" required>
+                    <input class="inicio-sesion-input" id="correo" type="text" name="correo" placeholder="Correo Electrónico" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                     <input class="inicio-sesion-input" id="nombre" type="text" name="nombre" placeholder="Nombre de usuario" required>
-                    <input class="inicio-sesion-input" id="contrasenha" type="text" name="contrasenha" placeholder="Contraseña" required>
+                    <input class="inicio-sesion-input" id="contrasenha" type="password" name="contrasenha" placeholder="Contraseña" required>
                     <div class="iniciar-sesion">
                         <button><p>Crear cuenta</p></button>
                         <p>¿Ya tienes una cuenta? <a href="../inicio_sesion/inicio_sesion_artista.html">Inicia sesión</a></p>
@@ -64,7 +64,7 @@
                 </form>
                 <div class="continuar-con">
                     <button id="continuar-google"><p>Continuar con Google</p></button>
-                    <button id="continuar-facebook"><p>Continuar con Facebook</p></button>
+                    <button id="continuar-twitter"><p>Continuar con Twitter</p></button>
                 </div>
             </div>
         </div>

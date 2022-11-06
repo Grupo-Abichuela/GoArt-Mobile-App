@@ -10,15 +10,16 @@
     text-decoration: none;
 }
 
-
 .alert_item.alert_error{
 	background: #ecc8c5;
 	color: #b32f2d;
+    box-shadow: 2px 2px 3px;
 }
 
 .alert_item.alert_success{
 	background: #def2d6;
 	color: #5a7052;
+    box-shadow: 2px 2px 3px;
 }
 
 .alert_wrapper .alert_item{

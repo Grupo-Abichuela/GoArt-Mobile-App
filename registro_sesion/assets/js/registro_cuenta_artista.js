@@ -1,6 +1,6 @@
 var sign_in_form = document.getElementById("inicio-sesion-form");
 var continuar_google = document.getElementById("continuar-google");
-var continuar_facebook = document.getElementById("continuar-facebook");
+var continuar_twitter = document.getElementById("continuar-twitter");
 var notifications = document.querySelectorAll(".alert_item");
 var close_btns = document.querySelectorAll(".close");
 
@@ -20,8 +20,8 @@ function verifyClientSignIn(event) {
 function registerGoogle(event) {
     window.location.href="https://accounts.google.com/login?hl=es";
 }
-function registerFacebook(event) {
-    window.location.href="https://es-la.facebook.com/login/device-based/regular/login/";
+function registerTwitter(event) {
+    window.location.href="https://twitter.com/login";
 }
 
 function verifyRegister(event) { 
@@ -30,9 +30,12 @@ function verifyRegister(event) {
     var nombre = document.getElementById('nombre');
     var contrasenha = document.getElementById('contrasenha');
     var correos_reg = ["artista01@outlook.com", "artista02@outlook.com", "artista03@outlook.com"];
+    var correos_validos = ["artista01@outlook.com", "artista02@outlook.com", "artista03@outlook.com"];
     for (var i = 0; i < correos_reg.length; i++) { 
         console.log(correos_reg[i], correo.value);
         if (correos_reg[i] == correo.value) {
+            correo.value = "";
+            contrasenha.value = "";
 		    notifications[0].style.top = "50%";
             return false;
         }
@@ -52,4 +55,4 @@ close_btns.forEach(function(close, close_index){
 
 sign_in_form.addEventListener('submit', verifyRegister);
 continuar_google.addEventListener('click', registerGoogle);
-continuar_facebook.addEventListener('click', registerFacebook);
+continuar_twitter.addEventListener('click', registerTwitter);
