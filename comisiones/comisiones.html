@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="css/buscar.css">
+    <link rel="stylesheet" href="css/estilos-comisiones.css">
     <link href="http://fonts.cdnfonts.com/css/kodchasan" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Hind Madurai' rel='stylesheet'>
     <link href="http://fonts.cdnfonts.com/css/inder" rel="stylesheet">
@@ -51,12 +51,31 @@
                         </div>
                         <div class="btns-com">
                             <button id="btn-iniciado"><a>Entregado</a></button>
-                            <button id="btn-dudas"><a href="../reseñas/dejar reseña.html">Reseñar</a></button>
+                            <button id="btn-dudas" onclick="openPopup">Reseñar</a></button>
                         </div>   
                     </li>
                 </ul>
             </div>
+            <div class="popup-reseña" id="popup-reseña">
+                <h2><strong>¡Deja una Reseña!</strong></h2>
+                <div class="reseña">
+                    <p id="editar"><b>Escribe tu reseña</b></p>
+                </div>
+                <div>
+                    <button id="end-editing" type="summit" class="btn-end">Enviar</button>
+                </div>
+            </div>
         </div>
+        <script src="../components/enviar_reseña.js"></script>
         <app-footer-nav></app-footer-nav>
+        <script>
+            let popup=document.getElementById("popup-reseña");
+            function openPopup(){
+                popup.classList.add("open-popup");
+            }
+            function closePopup(){
+                popup.classList.remove("open-popup");
+            }
+        </script>
     </div>
 </body>
