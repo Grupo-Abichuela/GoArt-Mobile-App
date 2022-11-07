@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/estilos-comisiones.css">
+    <link href="http://fonts.cdnfonts.com/css/kodchasan" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Hind Madurai' rel='stylesheet'>
+    <link href="http://fonts.cdnfonts.com/css/inder" rel="stylesheet">
+    <script src="../../components/card.js"></script>
+    <script src="../components/footer_nav.js"></script>
+</head>
+<body>
+    <script src="../components/footer_nav.js"></script>
+    <div class="device">
+        <header class="volver">
+            <button>
+                <a href="../solicitud comision/solicitud_comision.html" style="text-decoration: none"><img src="../assets/flecha.jpg">Volver</a>
+            </button>
+        </header>
+        <h1>Comisiones</h1>
+        <div class="content">
+            <div class="busqueda">
+                <p1>Buscar Comision</p1>
+            </div>
+            <div class="comisiones-solicitadas">
+                <ul>
+                    <li>
+                        <img src="../assets/comision 1.png">
+                        <div class="txt-coms">
+                            <a>
+                                Ronald Richards
+                            </a>
+                            <p>Retrato de perros al óleo</p>
+                        </div>
+                        <div class="btns-com">
+                            <button class="btn-comision"><a href="../comisiones/tracker.html">Iniciado</a></button>
+                            <button id="btn-dudas"><a>Dudas</a></button>
+                        </div>   
+                    </li>
+                    <li>
+                        <img src="../assets/comision 2.png">
+                        <div class="txt-coms">
+                            <a>
+                                Cameron Williamson
+                            </a>
+                            <p>Diseño de escenarios de videojuegos</p>
+                        </div>
+                        <div class="btns-com">
+                            <button id="btn-iniciado"><a>Entregado</a></button>
+                            <button id="btn-dudas" onclick="openPopup()">Reseñar</a></button>
+                        </div>   
+                    </li>
+                </ul>
+            </div>
+            <div class="popup-reseña" id="popup-reseña">
+                <h2><strong>¡Deja una Reseña!</strong></h2>
+                <div class="reseña">
+                    <p id="editar"><b>Escribe tu reseña</b></p>
+                </div>
+                <div>
+                    <button class="end-editing" onclick="closePopup()">Enviar</button>
+                </div>
+            </div>
+        </div>
+        <app-footer-nav></app-footer-nav>
+        <script>
+            let popup=document.getElementById("popup-reseña");
+            function openPopup(){
+                popup.classList.add("open-popup");
+            }
+            function closePopup(){
+                popup.classList.remove("open-popup");
+            }
+        </script>
+    </div>
+</body>

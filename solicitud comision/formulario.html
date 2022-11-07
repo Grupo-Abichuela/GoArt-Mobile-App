@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/estilos-formulario.css">
+    <link href="http://fonts.cdnfonts.com/css/kodchasan" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Hind Madurai' rel='stylesheet'>
+    <link href="http://fonts.cdnfonts.com/css/inder" rel="stylesheet">
+    <script src="../../components/card.js"></script>
+    <script src="../components/footer_nav.js"></script>
+</head>
+<body>
+    <script src="../components/footer_nav.js"></script>
+    <div class="device">
+        <header class="volver">
+            <button>
+                <a href="../solicitud comision/solicitud_comision.html" style="text-decoration: none"><img src="../assets/flecha.jpg">Volver</a>
+            </button>
+        </header>
+        <div class="container">
+            <h1>Solicitud de Comisión</h1>
+            <h2>Formulario previo</h2>
+        </div>
+        <div class="texto">
+            <p1>Para solicitar una comisión, debes primero compeltar unos pasos</p1>
+        </div>
+        <div class="Solicitud">
+            <div class="Elementos">
+                <ul>
+                    <li>Leer Términos y Condiciones</li>
+                    <button id="TC-btn" onclick="openPopup2()"><p>Leer T&C</p></button>
+                    <li>Establecer Forma de Pago</li>
+                    <button id="Pago-btn"><p>Forma de Pago</p></button>
+                    <li>Aceptar Terminos y Condiciones de la Aplicación</li>
+                </ul>
+            </div>
+            <div class="condiciones-ckbox">
+                <label><input type="checkbox" id="cbox1" 
+                    value="first_checkbox"> Acepto los T&C del Artista</label><br>
+                <input type="checkbox" id="cbox2" value="second_checkbox"> 
+                <label for="cbox2">Confirmo la veracidad del comprobante de pago enviado al artista</label><br>
+                <input type="checkbox" id="cbox3" value="third_checkbox"> 
+                <label for="cbox3">Prometo informar a las autoridades de cualquier intento de fraude</label>
+            </div>
+            <button id="btn-comision" onclick="openPopup()"><a>Enviar Solicitud</a></button>
+            <div class="popup-form" id="popup-form">
+                <h2><strong>¡Solicitud enviada!</strong></h2>
+                <div>
+                    <button class="end-editing" onclick="closePopup()">OK</button>
+                </div>
+            </div>
+            <div class="popup-TC" id="popup-TC">
+                <h2><strong>Terminos y Condiciones</strong></h2>
+                <p>Lorem ipsum et al.</p>
+                <div>
+                    <button class="end-editing" onclick="closePopup2()">Listo</button>
+                </div>
+            </div>
+        </div>
+        <app-footer-nav></app-footer-nav>
+        <script>
+            let popup=document.getElementById("popup-form");
+            function openPopup(){
+                popup.classList.add("open-popup");
+            }
+            function closePopup(){
+                popup.classList.remove("open-popup");
+            }
+        </script>
+        <script>
+            let popup2=document.getElementById("popup-TC");
+            function openPopup2(){
+                popup2.classList.add("open-popup");
+            }
+            function closePopup2(){
+                popup2.classList.remove("open-popup");
+            }
+        </script>
+    </div>
+    </div>
+</body>
