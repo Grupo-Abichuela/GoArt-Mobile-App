@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="http://fonts.cdnfonts.com/css/kodchasan" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perfil-cliente</title>
+</head>
+<body>
+    <script src="../components/footer_nav.js"></script>
+    
+    <div class="wrapper">
+        <div class="id-section">
+            <div class="circle">
+                <img src="assets/img/profile-cliente.png" class="profile-pic" id="photo">
+                <input type="file" id="file">
+                <label for="file" id="uploadBtn">Elegir Foto</label>
+            </div>
+            <div class="container">
+                <h1>Juliana Barcelli</h1>
+                <button id="edit-button" type = "summit" class="btn-edit">Editar</button>
+                <p>Lima, Perú</p>
+                <div class="description">
+                    <p id="edit"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</b></p>
+                </div>
+                <div class="calificacion">
+                    <img src="assets/img/estrella.png" class="estrella">
+                    <img src="assets/img/estrella.png" class="estrella">
+                    <img src="assets/img/estrella.png" class="estrella">
+                    <img src="assets/img/estrella.png" class="estrella">
+                    <img src="assets/img/estrella.png" class="estrella">
+                </div>
+                <div>
+                    <button id="end-editing" type = "summit" class="btn-end">Listo</button>
+                </div>
+                
+                <button class="btn-resenhas" href="">Reseñas Realizadas</button>
+            </div>
+        </div>
+    </div>
+    <script src="../components/perfil.js"></script>
+    <app-footer-nav></app-footer-nav>
+</body>
+</html>

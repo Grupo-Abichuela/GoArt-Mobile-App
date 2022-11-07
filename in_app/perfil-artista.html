@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="http://fonts.cdnfonts.com/css/kodchasan" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil-Artista</title>
+</head>
+<body>
+    <script src="../components/footer_nav.js"></script>
+    <div class="wrapper p-art">
+        <div class="id-section">
+            <div class="circle">
+                <img src="assets/img/profile-artista.jpg" class="profile-pic">
+            </div>
+            <div class="container p-ar">
+                <h1>Chubymi</h1>
+                <button class="btn-edit">Contactar</button>
+                <p>Lima, Perú</p>
+                <div class="description p-art">
+                    <p>Artist // Hobbyist // Digital Art</p>
+                </div>
+                <div class="calificacion">
+                    <img src="assets/img/estrella.png" >
+                    <img src="assets/img/estrella.png" >
+                    <img src="assets/img/estrella.png" >
+                    <img src="assets/img/estrella.png" >
+                    <img src="assets/img/estrella.png" >
+                </div>
+                <div class="redes-sociales">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="assets/img/_Facebook.png"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="assets/img/_Twitter.png"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/_Instagram.png"></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="assets/img/_Linkedin.png"></a>
+                    <a href="https://www.pinterest.com/" target="_blank"><img src="assets/img/_Pinterest.png"></a>
+                </div>
+                <button class="btn-resenhas" onclick="openPopup()">Términos y condiciones</button>
+                
+            </div>
+        </div>
+        <div class="popup" id="popup">
+            <h2>Términos y Condiciones</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <button class="btn-pop" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+    <app-footer-nav></app-footer-nav>
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+</html>
