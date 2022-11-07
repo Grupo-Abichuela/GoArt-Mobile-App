@@ -25,7 +25,6 @@ header {
     font-family: 'Kodchasan';
     font-style: normal;
     color: var(--turquoise-20);
-    background-color: var(--white);
     font-size: 20px;
     padding-left: 10px;
     padding-top: 30px;
@@ -98,7 +97,7 @@ header {
 .inicio-busqueda-form button[type=button] {
     position: absolute;
     left: 320px;
-    top: 120px;
+    top: 128px;
     text-indent: -999px;
     overflow: hidden;
     width: 10%;
