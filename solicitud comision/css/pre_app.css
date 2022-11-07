@@ -1,0 +1,77 @@
+.device {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: var(--turquoise-20);
+    width: 100%;
+    flex-grow: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.volver {
+    background-color: var(--white);
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.volver button {
+    font-family: 'Kodchasan';
+    font-style: normal;
+    color: var(--turquoise-20);
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 30px;
+    border: none;
+    background-color: var(--white);
+}
+
+.volver button :visited{
+    color: var(--turquoise-20);
+}
+.container {
+    width: 100%;
+    box-sizing: border-box;
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0% 33px;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+.container h1{
+    text-align: left;
+}
+.container img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5px;
+}
+.container p{
+    text-align: end;
+    font-size: xx-large;
+}
+.container button{
+    background: var(--blue);
+    color: var(--white);
+    font-size: 17px;
+    position: center;
+    justify-content: center;
+}
+.btn-comision{
+    width: 279px;
+    height: 48.15px;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.puntuacion span{
+    font-size: 3 rem;
+ 
+}
