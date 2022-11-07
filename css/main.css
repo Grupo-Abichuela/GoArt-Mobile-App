@@ -23,14 +23,16 @@
 * {
     font-family: 'Kodchasan';
 }
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
 
 .device {
     position: relative;
-    width: 400px;/*390px*/
-    height: 900px;/*844px;*/
-    background-color: var(--turquoise-30);
-    border: 1px solid red;
-    /*overflow: hidden;*/
+    width: 100%;/*390px*/
+    height: 100%;/*844px;*/
 }
 
 .app-footer-nav {
@@ -46,11 +48,10 @@
 }
 .footer-nav-buttons {
     position: absolute;
-    width: 90%;
+    width: 100%;
     padding: 0px;
-    margin: 0 5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .volver {
@@ -63,6 +64,7 @@
     column-gap: 5px;
     display: flex;
     align-items: center;
+    cursor:pointer;
 }
 .volver img {
     height: 22px;
