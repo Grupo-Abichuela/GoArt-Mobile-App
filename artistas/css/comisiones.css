@@ -35,7 +35,7 @@ header p {
     color: #B8E1E5;
     font-size: 20px;
     padding-left: 10px;
-    padding-top: 60px;
+    padding-top: 10px;
     border: none;
     background-color: var(--white);
 }
@@ -63,38 +63,52 @@ header p {
 }
 
 .cards-column {
-    background-color: var(--turquoise-20);
     width: 100%;
     height: min-content;
-    display: flex;        
-    justify-content: space-around;
+    padding: 20px 1px;
+    display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    padding-top: 10px;
+    row-gap: 10px;
+    justify-content: space-evenly;
  }
    
  .card{
     width: 180px;
+    max-width: 100%;
     height: auto;   
     border-radius: 5px;
     overflow: hidden;
+    position: relative;
  }
  .card-miniature {
     position: relative;   
     width: 100%;
     padding-bottom: 75%;
- /*   display: flex;
-    justify-content: center;*/
  }
     .card-miniature img {
-       object-position: top center;
+       object-position: center center;
        position: absolute;
        width:100%;
        height:100%;
        object-fit: cover;
        overflow: hidden;
     }
- 
+ .valoracion {
+    color: white;
+    font-size: 17px;
+    top: 9px;
+    right: 10px;
+    height: 20px;
+    position: absolute;
+    text-shadow: 2px 2px 1px var(--black);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 2px;
+ }
+    .valoracion img {
+          filter: drop-shadow( 2px 2px 0px var(--black));
+    }
  .card-profile {
     width: 100%;
     height: 75px;
@@ -112,7 +126,7 @@ header p {
        font-size: 16px;
        font-weight: bold;
        text-overflow: ellipsis;
-       overflow: hidden; 
+       overflow: hidden;
        white-space: nowrap;
        margin: 0;
     }
@@ -123,17 +137,30 @@ header p {
     align-items: center;
     column-gap: 6px;
  }
-    .card-artist img {
-       border-radius: 100% 100%;
+    .card-artist img{
+       border-radius: 50% 50%;
        height: 33px;
+       min-height: 100%;
        width: 33px;
-       object-fit: cover;   
+       object-fit: cover;
     }
     .card-profile a {
        text-decoration: none;
        color: var(--gray);
        font-size: 14px;
+       display: flex;
     }
+ @media (min-width: 600px) {
+    .cards-column {
+       justify-content: space-around;
+    }
+ 
+ }
+ @media (min-width: 700px) {
+    .card {
+       width: 200px;
+    }
+ }
 
 .inicio-sesion-form {
     color: var(--turquoise);
