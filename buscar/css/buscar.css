@@ -29,7 +29,6 @@ header {
     padding-left: 10px;
     padding-top: 30px;
     border: none;
-    background-color: var(--white);
 }
 
 .volver button :visited{
@@ -46,6 +45,7 @@ header {
     padding: 0% 33px;
     padding-top: 5%;
     padding-bottom: 10%;
+    background-color: #daedee;
 }
 
 .content img {
