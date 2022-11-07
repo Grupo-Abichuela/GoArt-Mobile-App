@@ -21,6 +21,44 @@
                 <a href="../solicitud comision/solicitud_comision.html" style="text-decoration: none"><img src="../assets/flecha.jpg">Volver</a>
             </button>
         </header>
+        <div class="container">
+            <h1>Solicitud de Comisión</h1>
+            <h2>Formulario previo</h2>
+        </div>
+        <div class="texto">
+            <p1>Para solicitar una comisión, debes primero compeltar unos pasos</p1>
+        </div>
+        <div class="Tracker">
+            <div class="TC">
+                <svg version="1.1" width="30" height="50" viewBox="0 0 120 120">
+                    <circle cx="70" cy="100" r="50"fill=rgb(211,211,211) />
+                </svg> 
+                <span>Leer Términos y Condiciones</span> 
+            </div>
+            <button id="TC-btn"><p>Leer T&C</p></button>
+            <div class="Forma de pago">
+                <svg version="1.1" width="30" height="50" viewBox="0 0 120 120">
+                    <circle cx="70" cy="100" r="50"fill=rgb(211,211,211) />
+                </svg> 
+                <span>Establecer Forma de Pago Previo</span> 
+            </div>
+            <button id="Pago-btn"><p>Forma de Pago</p></button>
+            <div class="Aceptar condiciones">
+                <svg version="1.1" width="30" height="50" viewBox="0 0 120 120">
+                    <circle cx="70" cy="100" r="50"fill=rgb(211,211,211) />
+                </svg> 
+                <span>Aceptar Condiciones de la Aplicación</span> 
+            </div>
+            <div class="condiciones-ckbox">
+                <label><input type="checkbox" id="cbox1" 
+                    value="first_checkbox"> Acepto los T&C del Artista</label><br>
+                <input type="checkbox" id="cbox2" value="second_checkbox"> 
+                <label for="cbox2">Confirmo la veracidad del comprobante de pago enviado al artista</label><br>
+                <input type="checkbox" id="cbox3" value="third_checkbox"> 
+                <label for="cbox3">Prometo informar a las autoridades de cualquier intento de fraude</label>
+            </div>
+            <button class="btn-comision"><a href="../solicitud comision/formulario.html">Enviar Solicitud</a></button>
+        </div>
         <app-footer-nav></app-footer-nav>
     </div>
 </body>
