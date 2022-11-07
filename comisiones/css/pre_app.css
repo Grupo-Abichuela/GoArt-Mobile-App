@@ -38,3 +38,9 @@
 .busqueda .rect{
     align-items: center;
 }
+.comisiones-solicitadas .li{
+    list-style: none;
+}
+.comisiones-solicitadas .a{
+    text-align: center;
+}
