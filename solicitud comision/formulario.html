@@ -32,7 +32,7 @@
             <div class="Elementos">
                 <ul>
                     <li>Leer Términos y Condiciones</li>
-                    <button id="TC-btn"><p>Leer T&C</p></button>
+                    <button id="TC-btn" onclick="openPopup2()"><p>Leer T&C</p></button>
                     <li>Establecer Forma de Pago</li>
                     <button id="Pago-btn"><p>Forma de Pago</p></button>
                     <li>Aceptar Terminos y Condiciones de la Aplicación</li>
@@ -46,8 +46,40 @@
                 <input type="checkbox" id="cbox3" value="third_checkbox"> 
                 <label for="cbox3">Prometo informar a las autoridades de cualquier intento de fraude</label>
             </div>
-            <button class="btn-comision"><a href="../solicitud comision/formulario.html">Enviar Solicitud</a></button>
+            <button id="btn-comision" onclick="openPopup()"><a>Enviar Solicitud</a></button>
+            <div class="popup-form" id="popup-form">
+                <h2><strong>¡Solicitud enviada!</strong></h2>
+                <div>
+                    <button class="end-editing" onclick="closePopup()">OK</button>
+                </div>
+            </div>
+            <div class="popup-TC" id="popup-TC">
+                <h2><strong>Terminos y Condiciones</strong></h2>
+                <p>Lorem ipsum et al.</p>
+                <div>
+                    <button class="end-editing" onclick="closePopup2()">Listo</button>
+                </div>
+            </div>
         </div>
         <app-footer-nav></app-footer-nav>
+        <script>
+            let popup=document.getElementById("popup-form");
+            function openPopup(){
+                popup.classList.add("open-popup");
+            }
+            function closePopup(){
+                popup.classList.remove("open-popup");
+            }
+        </script>
+        <script>
+            let popup2=document.getElementById("popup-TC");
+            function openPopup2(){
+                popup2.classList.add("open-popup");
+            }
+            function closePopup2(){
+                popup2.classList.remove("open-popup");
+            }
+        </script>
+    </div>
     </div>
 </body>
